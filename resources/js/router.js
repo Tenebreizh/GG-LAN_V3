@@ -9,9 +9,13 @@ import Home from './components/Pages/Home.vue'
 
 
 const routes = [
-    { name: "home", path: '/', component: Home },
-    { name: "hello", path: '/hello', component: Hello },
-    { name: "foo", path: '/foo', component: Foo },
+    { name: "dashboard",   path: '/',            component: Home  },
+    { name: "players",     path: '/players',     component: Hello },
+    { name: "teams",       path: '/teams',       component: Foo   },
+    { name: "games",       path: '/games',       component: Hello },
+    { name: "tournaments", path: '/tournaments', component: Foo   },
+    { name: "articles",    path: '/articles',    component: Foo   },
+    { name: "rules",       path: '/rules',       component: Hello }
 ]
 
 export default new VueRouter({
